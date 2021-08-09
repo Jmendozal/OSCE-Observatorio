@@ -1,0 +1,735 @@
+{
+	"info": {
+		"_postman_id": "f5b67d69-a642-4b19-84d6-98c553bad902",
+		"name": "OSCE - Observatorio Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "Cabecera-PiePagina",
+					"item": [
+						{
+							"name": "public-consultar-cabecera",
+							"item": [
+								{
+									"name": "Listar",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-cabecera/publico/v1/seccion/cabecera",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-cabecera",
+												"publico",
+												"v1",
+												"seccion",
+												"cabecera"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "public-consultar-pie-pagina",
+							"item": [
+								{
+									"name": "Listar Mapa Sitio",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-pie-pagina/publico/v1/seccion/piepagina/mapasitio",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-pie-pagina",
+												"publico",
+												"v1",
+												"seccion",
+												"piepagina",
+												"mapasitio"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Listar Correos",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-pie-pagina/publico/v1/seccion/piepagina/correo",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-pie-pagina",
+												"publico",
+												"v1",
+												"seccion",
+												"piepagina",
+												"correo"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Listar Redes",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-pie-pagina/publico/v1/seccion/piepagina/redes",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-pie-pagina",
+												"publico",
+												"v1",
+												"seccion",
+												"piepagina",
+												"redes"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Menu",
+					"item": [
+						{
+							"name": "public-consultar-menu-principal",
+							"item": [
+								{
+									"name": "Listar",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-menu-principal/publico/v1/menu/principal",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-menu-principal",
+												"publico",
+												"v1",
+												"menu",
+												"principal"
+											],
+											"query": [
+												{
+													"key": "canal",
+													"value": "app",
+													"disabled": true
+												},
+												{
+													"key": "usuario",
+													"value": "user",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "public-consultar-menu-secundario",
+							"item": [
+								{
+									"name": "Listar",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-menu-secundario/publico/v1/menu/secundario",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-menu-secundario",
+												"publico",
+												"v1",
+												"menu",
+												"secundario"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ObtenerById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-menu-secundario/publico/v1/menu/secundario/:idMenuSecundario",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-menu-secundario",
+												"publico",
+												"v1",
+												"menu",
+												"secundario",
+												":idMenuSecundario"
+											],
+											"variable": [
+												{
+													"key": "idMenuSecundario",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Pagina Inicio",
+					"item": [
+						{
+							"name": "public-consultar-pagina-inicio",
+							"item": [
+								{
+									"name": "listPaginaInicio",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-pagina-inicio/publico/v1/pagina-inicio?idRastreo=43245325325&fecha",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-pagina-inicio",
+												"publico",
+												"v1",
+												"pagina-inicio"
+											],
+											"query": [
+												{
+													"key": "idRastreo",
+													"value": "43245325325"
+												},
+												{
+													"key": "fecha",
+													"value": null
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "getPaginaInicioById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-pagina-inicio/publico/v1/pagina-inicio/:idPubSeccInicio?idRastreo=43245325325&fecha",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-pagina-inicio",
+												"publico",
+												"v1",
+												"pagina-inicio",
+												":idPubSeccInicio"
+											],
+											"query": [
+												{
+													"key": "idRastreo",
+													"value": "43245325325"
+												},
+												{
+													"key": "fecha",
+													"value": null
+												}
+											],
+											"variable": [
+												{
+													"key": "idPubSeccInicio",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "getVideoById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-pagina-inicio/publico/v1/pagina-inicio/video/:idPubSeccInicio?idRastreo=43245325325&fecha",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-pagina-inicio",
+												"publico",
+												"v1",
+												"pagina-inicio",
+												"video",
+												":idPubSeccInicio"
+											],
+											"query": [
+												{
+													"key": "idRastreo",
+													"value": "43245325325"
+												},
+												{
+													"key": "fecha",
+													"value": null
+												}
+											],
+											"variable": [
+												{
+													"key": "idPubSeccInicio",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "getTextIntroById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-pagina-inicio/publico/v1/pagina-inicio/texto-intro/:idPubSeccInicio?idRastreo=43245325325&fecha",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-pagina-inicio",
+												"publico",
+												"v1",
+												"pagina-inicio",
+												"texto-intro",
+												":idPubSeccInicio"
+											],
+											"query": [
+												{
+													"key": "idRastreo",
+													"value": "43245325325"
+												},
+												{
+													"key": "fecha",
+													"value": null
+												}
+											],
+											"variable": [
+												{
+													"key": "idPubSeccInicio",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "public-consultar-banner-home",
+							"item": [
+								{
+									"name": "getBanner",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-banner-home/publico/v1/pagina-inicio/:idPubSeccInicio/banner?idRastreo=43245325325&fecha",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-banner-home",
+												"publico",
+												"v1",
+												"pagina-inicio",
+												":idPubSeccInicio",
+												"banner"
+											],
+											"query": [
+												{
+													"key": "idRastreo",
+													"value": "43245325325"
+												},
+												{
+													"key": "fecha",
+													"value": null
+												}
+											],
+											"variable": [
+												{
+													"key": "idPubSeccInicio",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "public-consultar-home-enlaces",
+							"item": [
+								{
+									"name": "getEnlacesExternos",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-home-enlaces/publico/v1/pagina-inicio/:idPubSeccInic/enlaces-ext?idRastreo=43245325325&fecha",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-home-enlaces",
+												"publico",
+												"v1",
+												"pagina-inicio",
+												":idPubSeccInic",
+												"enlaces-ext"
+											],
+											"query": [
+												{
+													"key": "idRastreo",
+													"value": "43245325325"
+												},
+												{
+													"key": "fecha",
+													"value": null
+												}
+											],
+											"variable": [
+												{
+													"key": "idPubSeccInic",
+													"value": "4"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "public-consultar-home-cards",
+							"item": [
+								{
+									"name": "getTarjetas",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-home-cards/publico/v1/pagina-inicio/:idPubSeccInic/tarjetas?idRastreo=43245325325&fecha",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-home-cards",
+												"publico",
+												"v1",
+												"pagina-inicio",
+												":idPubSeccInic",
+												"tarjetas"
+											],
+											"query": [
+												{
+													"key": "idRastreo",
+													"value": "43245325325"
+												},
+												{
+													"key": "fecha",
+													"value": null
+												}
+											],
+											"variable": [
+												{
+													"key": "idPubSeccInic",
+													"value": "5"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Secciones",
+					"item": [
+						{
+							"name": "public-consultar-seccion-principal",
+							"item": [
+								{
+									"name": "ObtenerSeccionById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{base_url}}/public-consultar-seccion-principal/publico/v1/seccion/principal/:idSeccionPrincipal?idRastreo=43245325325&fecha",
+											"protocol": "http",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"public-consultar-seccion-principal",
+												"publico",
+												"v1",
+												"seccion",
+												"principal",
+												":idSeccionPrincipal"
+											],
+											"query": [
+												{
+													"key": "idRastreo",
+													"value": "43245325325"
+												},
+												{
+													"key": "fecha",
+													"value": null
+												}
+											],
+											"variable": [
+												{
+													"key": "idSeccionPrincipal",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Contactanos",
+							"item": [
+								{
+									"name": "public-consultar-contact-banner",
+									"item": [
+										{
+											"name": "listBanners",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://{{base_url}}/public-consultar-contact-banner/publico/v1/seccion/contactanos/banner?idRastreo=43245325325&fecha",
+													"protocol": "http",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"public-consultar-contact-banner",
+														"publico",
+														"v1",
+														"seccion",
+														"contactanos",
+														"banner"
+													],
+													"query": [
+														{
+															"key": "idRastreo",
+															"value": "43245325325"
+														},
+														{
+															"key": "fecha",
+															"value": ""
+														}
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "public-consultar-contact-mapa",
+									"item": [
+										{
+											"name": "ListarOficinas",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://{{base_url}}/public-consultar-contact-mapa/publico/v1/seccion/contactanos/mapa",
+													"protocol": "http",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"public-consultar-contact-mapa",
+														"publico",
+														"v1",
+														"seccion",
+														"contactanos",
+														"mapa"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "ObtenerById",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://{{base_url}}/public-consultar-contact-mapa/publico/v1/seccion/contactanos/mapa/:idPubMapa",
+													"protocol": "http",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"public-consultar-contact-mapa",
+														"publico",
+														"v1",
+														"seccion",
+														"contactanos",
+														"mapa",
+														":idPubMapa"
+													],
+													"variable": [
+														{
+															"key": "idPubMapa",
+															"value": ""
+														}
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "public-consultar-contact-info",
+									"item": [
+										{
+											"name": "ListarContactanos",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://{{base_url}}/public-consultar-contact-info/publico/v1/seccion/contactanos?idRastreo=43245325325&fecha",
+													"protocol": "http",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"public-consultar-contact-info",
+														"publico",
+														"v1",
+														"seccion",
+														"contactanos"
+													],
+													"query": [
+														{
+															"key": "idRastreo",
+															"value": "43245325325"
+														},
+														{
+															"key": "fecha",
+															"value": null
+														}
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "ObtenerById",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://{{base_url}}/public-consultar-contact-info/publico/v1/seccion/contactanos/:idPubSeccContact?idRastreo=43245325325&fecha",
+													"protocol": "http",
+													"host": [
+														"{{base_url}}"
+													],
+													"path": [
+														"public-consultar-contact-info",
+														"publico",
+														"v1",
+														"seccion",
+														"contactanos",
+														":idPubSeccContact"
+													],
+													"query": [
+														{
+															"key": "idRastreo",
+															"value": "43245325325"
+														},
+														{
+															"key": "fecha",
+															"value": null
+														}
+													],
+													"variable": [
+														{
+															"key": "idPubSeccContact",
+															"value": ""
+														}
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
